@@ -1,0 +1,140 @@
+<canvas id='canvas' width=1300 height=1300>
+<script>
+function polygon(a, colorBorde, colorRelleno) {    
+
+  ctx.beginPath()
+  ctx.strokeStyle = colorBorde
+  ctx.fillStyle = colorRelleno
+  ctx.moveTo(a[0],a[1])
+  for (i=2; i < a.length; i+=2)
+    ctx.lineTo(a[i],a[i+1]);
+  ctx.closePath()
+  ctx.stroke()
+  ctx.fill()
+}
+  var canvas = document.getElementById('canvas')
+  var ctx = canvas.getContext('2d');
+ 
+ 
+ polygon([572,187,535,292,429,240,483,342,368,376,483,412,429,511,537,462,573,570,
+ 610,461,717,513,661,412,776,377,662,342,717,242,610,292], 'Black', 'grey')
+ 
+ polygon([572,187,573,570], 'blue')
+ polygon([429,240,717,513], 'red')
+ polygon([368,376,776,377], 'black')
+ polygon([429,511,717,242], 'yellow')
+
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(572,187);
+    ctx.lineTo(573,378);
+    ctx.lineTo(535, 292);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(572,187);
+    ctx.lineTo(573,378);
+    ctx.lineTo(610,292);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(429,240);
+    ctx.lineTo(573,378);
+    ctx.lineTo(535, 292);
+    ctx.fill();
+   
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(429,240);
+    ctx.lineTo(573,378);
+    ctx.lineTo(483,342);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(368,376);
+    ctx.lineTo(573,378);
+    ctx.lineTo(483,342);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(368,376);
+    ctx.lineTo(573,378);
+    ctx.lineTo(483,412);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(429,511,);
+    ctx.lineTo(573,378);
+    ctx.lineTo(483,412);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(429,511);
+    ctx.lineTo(573,378);
+    ctx.lineTo(537,462);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(573,570);
+    ctx.lineTo(573,378);
+    ctx.lineTo(537,462);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(573,570);
+    ctx.lineTo(573,378);
+    ctx.lineTo(610,461);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(717,513);
+    ctx.lineTo(573,378);
+    ctx.lineTo(610,461);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(717,513);
+    ctx.lineTo(573,378);
+    ctx.lineTo(661,412);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(776,377);
+    ctx.lineTo(573,378);
+    ctx.lineTo(661,412);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(776,377);
+    ctx.lineTo(573,378);
+    ctx.lineTo(662,342);
+    ctx.fill();
+    
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'White';
+    ctx.moveTo(717,242);
+    ctx.lineTo(573,378);
+    ctx.lineTo(662,342);
+    ctx.fill();
+    
+    ctx.beginPath();
+    ctx.fillStyle = 'Black';
+    ctx.moveTo(717,242);
+    ctx.lineTo(573,378);
+    ctx.lineTo(610,292);
+    ctx.fill();
+
+</script>
